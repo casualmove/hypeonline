@@ -1,5 +1,3 @@
-# hypeonline
-A website for any rewrite project
 
 
 # HYPE RUSSIA — Официальный веб-портал игрового проекта
