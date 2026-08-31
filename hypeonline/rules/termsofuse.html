@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HYPE RUSSIA - Условия использования</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafafa">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header .logo img {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+        
+        header .logo img:hover {
+            transform: scale(1.05);
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #667eea;
+        }
+        
+        .title_section {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        .title_section::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: #667eea;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .subsection {
+            margin: 25px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subsection-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        
+        .text {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+        }
+        
+        .text strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: #667eea;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .highlight-box h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .rules-list {
+            background: #fff5f5;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #e74c3c;
+        }
+        
+        .rules-list h4 {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .rules-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .rules-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+        
+        .rules-list li::before {
+            content: '•';
+            color: #e74c3c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .rights-list {
+            background: #f0fff4;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .rights-list h4 {
+            color: #27ae60;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .rights-list ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .rights-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+        }
+        
+        .rights-list li::before {
+            content: '•';
+            color: #27ae60;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .date-info {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .date-info h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+        
+        .date-info p {
+            font-size: 18px;
+            color: #bdc3c7;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                margin: 20px;
+                padding: 30px 20px;
+            }
+            
+            .title_section {
+                font-size: 24px;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://hype-russia.ru/">
+                <img src="../images/logo.svg" alt="HYPE RUSSIA" style="height:60px;">
+            </a>
+        </div>
+    </header>
+    
+    <section class="shop">
+        <div class="content">
+            <div class="title_section">
+                Условия использования
+            </div>
+            
+            <div class="highlight-box">
+                <h4>Правила использования сайта</h4>
+                <p>Настоящие условия регулируют использование сайта https://hype-russia.ru/ и устанавливают права и обязанности пользователей.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">1. Общие положения</div>
+                <div class="text">
+                    <strong>1.1.</strong> Настоящие Условия использования (далее — «Условия») регулируют отношения между администрацией сайта HYPE RUSSIA (далее — «Сайт») и его пользователями.
+                </div>
+                <div class="text">
+                    <strong>1.2.</strong> Пользуясь Сайтом, вы соглашаетесь с настоящими Условиями. Если вы не согласны, прекратите использование Сайта.
+                </div>
+                <div class="text">
+                    <strong>1.3.</strong> Администрация оставляет право изменять Условия без предварительного уведомления. Новая редакция вступает в силу с момента публикации.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">2. Права и обязанности пользователей</div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">2.1. Пользователь обязуется:</div>
+                    <div class="rules-list">
+                        <h4>Запрещенные действия</h4>
+                        <ul>
+                            <li>Не нарушать законы своей страны и международное законодательство</li>
+                            <li>Не распространять спам, вирусы, вредоносное ПО</li>
+                            <li>Не размещать незаконный, оскорбительный или вредоносный контент</li>
+                            <li>Не использовать Сайт для мошенничества или незаконных действий</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <div class="subsection-title">2.2. Пользователь имеет право:</div>
+                    <div class="rights-list">
+                        <h4>Разрешенные действия</h4>
+                        <ul>
+                            <li>Получать доступ к информации на Сайте в соответствии с его функционалом</li>
+                            <li>Обращаться в поддержку при возникновении вопросов</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">3. Интеллектуальная собственность</div>
+                <div class="text">
+                    <strong>3.1.</strong> Все материалы Сайта (тексты, изображения, дизайн, код) защищены авторским правом.
+                </div>
+                <div class="text">
+                    <strong>3.2.</strong> Использование контента без разрешения правообладателя запрещено.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">4. Ограничение ответственности</div>
+                <div class="text">
+                    <strong>4.1.</strong> Администрация не гарантирует бесперебойную работу Сайта.
+                </div>
+                <div class="text">
+                    <strong>4.2.</strong> Сайт не несёт ответственности за ущерб, вызванный использованием или невозможностью использования ресурса.
+                </div>
+                <div class="text">
+                    <strong>4.3.</strong> Пользователь самостоятельно отвечает за размещаемый им контент.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">5. Конфиденциальность</div>
+                <div class="text">
+                    <strong>5.1.</strong> Персональные данные обрабатываются в соответствии с <a href="politic.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Политикой конфиденциальности</a>.
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">6. Заключительные положения</div>
+                <div class="text">
+                    <strong>6.1.</strong> Споры решаются в соответствии с законодательством Российской Федерации.
+                </div>
+                <div class="text">
+                    <strong>6.2.</strong> По вопросам, не урегулированным Условиями, применяются нормы действующего права.
+                </div>
+            </div>
+            
+            <div class="date-info">
+                <h4>Дата вступления в силу</h4>
+                <p>06.07.2025</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
